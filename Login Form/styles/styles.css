@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.login-container {
+  width: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ca0afa), to(#0c01af));
+  background-image: linear-gradient(#ca0afa, #0c01af);
+  border-radius: 20px;
+  margin: 30% auto;
+}
+
+.login-container form {
+  background-color: rgba(255, 255, 255, 0.452);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form h1 {
+  text-align: center;
+  margin: 20px;
+  text-shadow: rgba(118, 0, 134, 0.507) 1px 2px;
+}
+
+.login-container form label {
+  font-weight: 600;
+}
+
+.login-container form input {
+  width: 300px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.login-container form button {
+  margin: 20px;
+  margin-bottom: 40px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 120px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ca0afa), to(#0c01af));
+  background-image: linear-gradient(#ca0afa, #0c01af);
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.493) 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.493) 2px 4px;
+}
+
+.login-container form button:active {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 1px 2px;
+          box-shadow: rgba(255, 255, 255, 0.5) 1px 2px;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+/*# sourceMappingURL=styles.css.map */

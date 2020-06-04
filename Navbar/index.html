@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Navbar</title>
+</head>
+
+
+<script>
+    function navbarToggler() {
+        var toggleList = document.getElementById("toggleList");
+        if( toggleList.className === "nav-item-list"){
+            toggleList.className = "nav-item-list active";
+        } else {
+            toggleList.className = "nav-item-list";
+        }
+
+    }
+</script>
+<body>
+    <nav class="navbar">
+        <div class="nav-toggle" onclick="navbarToggler()">
+            <img class="nav-icon" src="/assets/hamburger.svg" alt="nav button">
+        </div>
+        
+        <div class="nav">
+            <h2 class="nav-brand">IdeaHub</h2>
+            <ul class="nav-item-list active" id="toggleList">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">Ideas</li>
+                <li class="nav-item">About</li>
+            </ul>
+        </div>
+        <div class="nav-user">
+            <h4 class="nav-user-name">Aritra</h4>
+            <div class="nav-user-logo"></div>
+        </div>
+
+
+    </nav>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white ;
+    .container{
+        background-image: linear-gradient(rgb(202, 10, 250), rgb(12, 1, 175));
+        .event-info{
+            text-align: center;
+            color: white;
+            height: 400px;
+            .info-content{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 10px;
+                h1{
+                    padding: 0px 10px;
+                    font-size: 36px;
+                }
+                p{
+                    padding: 0px 5px;
+                }
+                strong{
+                    display: block;
+                }
+            }
+        }
+        form{
+            flex : 1.4;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.609) ;
+            h1{
+                font-size: 36px;
+                text-align: center;
+                margin: 10px auto 40px auto;
+            }
+            label{
+                margin: 5px 0px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            input, select{
+                display: block;
+                width: 96%;
+                height: 30px;
+                margin: 2px 0px 10px 0px;
+
+            }
+            input[type="file"]{
+                background-color: white ;
+                padding: 2px 8px;
+                border-radius: 5px;
+            }
+            select{
+                width: 99%;
+            }
+            button{
+                height: 40px;
+                width: 200px;
+                border-radius: 15px;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 20px auto;
+
+                background-image: linear-gradient(rgb(202, 10, 250), rgb(12, 1, 175));
+                border: none;
+                color: white;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    body{
+        .container{
+            height: 700px;
+            max-width: 1000px;
+            width: 95%;
+            margin: 40px auto;
+            display: flex;
+            border-radius: 20px;
+            .event-info{
+                height: 100%;
+                flex: 1;
+                .info-content{
+                    p{
+                        padding: 0px 20px;
+                    }
+                    strong{
+                        display: block;
+                    }
+                }
+
+            }
+            }
+        }
+    }

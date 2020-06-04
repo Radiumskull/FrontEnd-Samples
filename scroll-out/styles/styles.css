@@ -1,0 +1,60 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page div {
+  width: 30em;
+  padding: 10%;
+}
+
+.page h1 {
+  font-size: 48px;
+}
+
+.page p {
+  margin-top: 30px;
+}
+
+.page h1[data-scroll="in"] {
+  position: fixed;
+}
+
+.page1 {
+  background-color: yellowgreen;
+}
+
+.page2 {
+  background-color: blue;
+}
+
+.page3 {
+  background-color: blueviolet;
+}
+
+.page4 {
+  background-color: green;
+}
+
+[data-scroll] {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+/*# sourceMappingURL=styles.css.map */

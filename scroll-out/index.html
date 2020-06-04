@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Scroll Animation</title>
+</head>
+<body>
+    <section class="page page1">
+        <div>
+            <h1>Page 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam fugiat quo mollitia soluta. Beatae consectetur praesentium dignissimos ullam ratione, expedita rem voluptas corrupti, delectus modi magni incidunt fugiat sunt.</p>
+        </div>
+    </section>
+    <section class="page page2">
+        <div data-scroll>
+            <h1>Page 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam fugiat quo mollitia soluta. Beatae consectetur praesentium dignissimos ullam ratione, expedita rem voluptas corrupti, delectus modi magni incidunt fugiat sunt.</p>
+        </div>
+    </section>
+    <section class="page page3">
+        <div data-scroll>
+            <h1>Page 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam fugiat quo mollitia soluta. Beatae consectetur praesentium dignissimos ullam ratione, expedita rem voluptas corrupti, delectus modi magni incidunt fugiat sunt.</p>
+        </div>
+    </section>
+    <section class="page page4">
+        <div>
+            <h1>Page 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam fugiat quo mollitia soluta. Beatae consectetur praesentium dignissimos ullam ratione, expedita rem voluptas corrupti, delectus modi magni incidunt fugiat sunt.</p>
+        </div>
+    </section>
+
+    <script>
+        ScrollOut({
+            threshold : .5,
+        });
+
+    </script>
+</body>
+</html>

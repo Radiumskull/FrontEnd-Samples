@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <script>
+        function sidebarToggle(){
+            document.getElementById('sidebar-toggle').classList.toggle('sidebar-expanded');
+            document.querySelectorAll('.icon-title').forEach(title => {
+                title.classList.toggle('active')
+            })
+        }
+    </script>
+    <header>
+        <nav class="custom-nav">
+            <div class="toggle-button" onclick="sidebarToggle()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="nav-container">
+                <h1 class="nav-title">Nodal Officer</h1>
+                <button class="btn btn-primary logout-button">Logout</button>
+            </div>
+        </nav>
+    </header>
+    <div class="custom-main">
+        <aside class="sidebar">
+            <div class="static-sidebar" id="sidebar-toggle">
+                <span class="icon-container">
+                    <span  class="icon"><i class="fa fa-plus mr-3" aria-hidden="true"></i></span>
+                    <span class="icon-title">Add Case</span>
+                </span>
+                <span class="icon-container">
+                    <span  class="icon"><i class="far fa-file-word mr-3" aria-hidden="true"></i></span>
+                    <span class="icon-title">Case Details</span>
+                </span>
+                <span class="icon-container">
+                    <span class="icon"><i class="fas fa-user-plus mr-3" aria-hidden="true"></i></span>
+                    <span class="icon-title">Add Viewer</span>
+                </span>
+                <span class="icon-container logout-item">
+                    <span class="icon"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span>
+                    <span class="icon-title">Signout</span>
+                </span>
+            </div>
+        </aside>
+        <div class="content">
+                <div class="item">
+                <div class="form-group">
+                    <label for="case_against">Case Against</label>
+                    <input type="text" class="form-control" id="case_against" name="case_against">
+                  </div>
+                  <div class="form-group">
+                    <label for="against_lawyer">Case Against Lawyer</label>
+                    <input type="text" class="form-control" id="against_lawyer" name="against_lawyer">
+                  </div>
+                  <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" class="form-control" id="department" name="department">
+                  </div>
+                  <div class="form-group">
+                    <label for="dep_lawyer">Department Lawyer</label>
+                    <input type="text" class="form-control" id="dep_lawyer" name="dep_lawyer">
+                  </div>
+                  <div class="form-group">
+                    <label for="Details">Case Details</label>
+                    <textarea class="form-control" rows="2" id="Details" name="Details"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="Date">Case Filed Date</label>
+                    <input type="textarea" class="form-control" id="Date" name="Date">
+                  </div>
+                  <div class="form-group">
+                    <label for="Hearing">Next Hearing</label>
+                    <input type="textarea" class="form-control" id="Hearing" name="Hearing">
+                  </div>
+                  <div class="form-group">
+                    <label for="Court">Select Court</label>
+                    <select name="Court" class="custom-select mb-3">
+                    <option value="0">Select</option>
+                    <option value="1">Supreme Court</option>
+                    <option value="2">District Court</option>
+                    <option value="3">High Court</option>
+                    <option value="4">Judge Court</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="City">Select City</label>
+                    <select name="City" class="custom-select mb-3">
+                    <option value="0">Select</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Raipur">Raipur</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Kanpur">Kanpur</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-success">SUBMIT</button>
+                  </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
